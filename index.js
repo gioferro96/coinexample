@@ -1,5 +1,5 @@
 var express = require('express');
-var port = process.env.PORT || 8080;
+var port = process.env.OPENSHIFT_NODEJS_PORT || 8080;
 var app = express();
 
 app.all('/',function(req,res){
